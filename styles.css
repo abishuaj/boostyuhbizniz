@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://lh3.googleusercontent.com/drive-viewer/AITFw-waRci8_gwKgxQvQSspYPzLvdnT-nFy1K51FCPz8BwJ1OwRTraVSILPF3VGrHOhQQQlZhlVaPeivYiFMGThl3uCDE6Nvw=s1600?source=screenshot.guru');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensures the background image resizes when the viewport size changes */
+@media (max-width: 768px) {
+  body {
+    background-size: contain;
+  }
+}
+
+/* Style for the text containers */
+.welcome-text {
+  position: absolute;
+  bottom: 420px;
+  left: 40px;
+  color: #FCDC01;
+  font-size: 145px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-shadow: -2px -2px 0 #054895, 2px -2px 0 #054895, -2px 2px 0 #054895, 2px 2px 0 #054895;
+}
+
+.business-text {
+  position: absolute;
+  bottom: 270px;
+  left: 40px;
+  color: #054895;
+  font-size: 145px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border-color: #054895;
+  text-shadow: -2px -2px 0 #FCDC01, 2px -2px 0 #FCDC01, -2px 2px 0 #FCDC01, 2px 2px 0 #FCDC01;
+}
+
+.consult-text {
+  position: absolute;
+  bottom: 100px;
+  left: 40px;
+  color: #054895;
+  font-size: 145px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  border-color: #054895;
+  text-shadow: -2px -2px 0 #FCDC01, 2px -2px 0 #FCDC01, -2px 2px 0 #FCDC01, 2px 2px 0 #FCDC01;
+}
+
+/* Style for the main rectangle */
+.rectangle {
+  position: absolute;
+  bottom: 250px;
+  right: 290px;
+  width: 130mm;
+  height: 150mm;
+  background-color: rgba(255, 255, 255, 0.77);
+  border: 12px solid #054895; /* Added border style, width, and color */
+}
+
+
+/* Style for the blue rectangle */
+.blue-rectangle {
+  position: absolute;
+  bottom: 750px;
+  right: 290px;
+  width: 134mm;
+  height: 23mm;
+  background-color: #054895;
+  
+}
+
+/* Style for the image container inside the blue rectangle *yle for the yellow button */
+.yellow-button {
+  position: absolute;
+  bottom: 580px;
+  right: 360px;
+  background-color: #FCDC01;
+  color: #054895; /* Blue text color */
+  font-size: 48px;
+  font-weight: bold;
+  font-family: 'Poppins', 'sans-serif';
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Style for the blue button */
+.blue-button {
+  position: absolute;
+  bottom: 400px;
+  right: 390px;
+  background-color: #FCDC01;
+  color: #054895; /* Blue text color */
+  font-size: 48px;
+  font-family: 'Poppins', 'sans-serif';
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
+/* Style for the image link at the bottom right */
+.image-link {
+  position: absolute;
+  top: 18%; /* Adjust the top value to move the image up */
+  left: 71%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  pointer-events: none;
+  
+}
+
+.yellow-button:hover {
+  background-color: #054895;
+  color: #FCDC01;
+}
+
+.blue-button:hover {
+  background-color: #054895;
+  color: #FCDC01;
+}
+

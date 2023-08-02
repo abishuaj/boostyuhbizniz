@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="instaloan.css">
+    <script src="instaloan.js" defer></script>
+</head>
+<body>
+    <a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-yRl6svB_hZQxSLb5mrNzZ-m29A2rREgDsoEbnGLXiWWqo7joYlHW6gXTIZTF6nUitXsSqkP4o_YfWdIz6TsANRL9S6ew=s2560?source=screenshot.guru" target="_blank" class="image-link-top-right">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yRl6svB_hZQxSLb5mrNzZ-m29A2rREgDsoEbnGLXiWWqo7joYlHW6gXTIZTF6nUitXsSqkP4o_YfWdIz6TsANRL9S6ew=s2560" alt="Image" class="image-top-right" />
+      </a>
+
+    <a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-yyYDHlgu7g3EhVQ2BpB1ezrYsUDy_TTF6AUENguVemhWnpsopwXt34yOO83kiJL3hS6C3ISHrpyVbjklVcDLJOLDj1hg=s2560?source=screenshot.guru" target="_blank" class="image-link-top-left">
+        <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-yyYDHlgu7g3EhVQ2BpB1ezrYsUDy_TTF6AUENguVemhWnpsopwXt34yOO83kiJL3hS6C3ISHrpyVbjklVcDLJOLDj1hg=s2560" class="image-top-left" alt="Image Top Left">
+    </a>
+      
+    <div class="header">
+        <h1 class="insta-loan">Insta-Loan</h1>
+        <div class="white-rectangle">
+            <!-- Blue circle and "Business Account" text -->
+            <div class="blue-circle-container">
+              <div class="blue-circle"></div>
+              <p class="circle-text">Business Account&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Account Balance</p>
+            </div>
+        
+            <!-- Grey line -->
+            <div class="account-number">•••••67890&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JMD<span id="account-balance">$2,340,000.65</span></div>
+            <div class="grey-line"></div>
+
+            <div class="grey-line"></div>
+
+            <div class="credit-level-container">
+                <div class="credit-level-text">Credit Level: Gold</div>
+                <a href="https://lh3.googleusercontent.com/drive-viewer/AITFw-zqFVfosibtapWDzJCGoVkyU-unvXuo5oZ7DNfWrWwc66nzf4Z0vcZlZ2TawdgiMmv_g5IsyAuLIqctsZCaBf7wlOynaQ=s2560?source=screenshot.guru" target="_blank" class="credit-level-image-link"> <img src="https://lh3.googleusercontent.com/drive-viewer/AITFw-zqFVfosibtapWDzJCGoVkyU-unvXuo5oZ7DNfWrWwc66nzf4Z0vcZlZ2TawdgiMmv_g5IsyAuLIqctsZCaBf7wlOynaQ=s2560" class="credit-level-image" alt="Credit Level"  /> </a>
+              </div>
+
+              <div class="custom-amount-button">
+                <button type= "button" class="custom-amount-text" onclick="openCustomAmountPopup()"id="custom-amount-button">Borrow Custom Amount</button>
+            </div>
+
+              <div class="max-amount-button">
+                <button type="button" class="max-amount-text" onclick= "openPopup()"id="max-amount-button">Pre-Approved: JMD$12,000,000</button>
+            </div>
+            
+    </div>
+    <button class="grey-button"></button>
+
+    <div class="popup" id="popup">
+        <h2>Maximum Amount</h2>
+        <p>The maximum amount of funds available to you is JMD$12,000,000.</p>
+        <button type="button" id="ok-button" class="ok-button"onclick="closePopup()">OK</button>
+    </div>
+
+    <div class="popup" id="custom-amount-popup">
+        <button type="button" class="close-button" onclick="closeCustomAmountPopup()">&times;</button>
+        <h2>ENTER AMOUNT</h2>
+        <input type="number" id="amount-input" placeholder="Enter amount">
+        <button type="button" id="confirm-button" class="confirm-button" onclick="confirmCustomAmount()">CONFIRM</button>
+    </div>
+
+    <div id="agreement-message" class="popup">
+        <h2>By clicking accept, you agree to borrow the specified amount of money.</h2>
+        <button class="confirm-button" onclick="updateBalanceAndClosePopup(); closeCustomAmountPopup();">ACCEPT</button>
+
+      </div>
+    
+      
+    
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #EDEFEF;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Your existing CSS styles */
+
+/* Style for the header container */
+.header {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  color: #054895; /* Yellow text color */
+  height: 180px; /* Adjust the height as needed */
+  padding: 0 20px; /* Add some padding to the header */
+}
+
+/* Style for the "INSTA LOAN" text */
+.insta-loan {
+  font-size: 106px;
+  font-family: 'Poppins', sans-serif;
+  margin: 20;
+
+}
+
+/* Style for the image link in the top right corner */
+.image-link-top-right {
+  position: absolute;
+  top: -11%; /* Adjust the top value to move the image up */
+  left: 82%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 999;
+  pointer-events: none;   
+}
+
+.image-link-top-left {
+  position: absolute;
+  top: -14%; /* Adjust the top value to move the image up */
+  left: -6%;
+  width: 100%;
+  height: 100%;
+  z-index: 999; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+.grey-button {
+  position: absolute;
+  bottom: 1245px;
+  left: 50px;
+  background-color: #EDEFEF;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Style for the buttons container */
+.button-container {
+  display: flex;
+  flex-direction: row; /* Display the buttons in a row */
+  align-items: center; /* Center horizontally */
+  margin-top: 20px; /* Add some space between the heading and the buttons */
+  justify-content: center; /* Center the buttons horizontally */
+}
+
+/* Style for the rectangular buttons */
+.record-button {
+  background-color: #FCDC01;
+  color: #054895;
+  border: none;
+  border-radius: 70px; /* Use a high value to make the edges almost oval */
+  padding: 30px 60px;
+  margin: 10px; /* Adjust the space between the buttons as needed */
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth color transition on hover */
+  height: 140px;
+  width: 280px;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+}
+
+/* Change the text color on hover */
+.record-button:hover {
+  background-color: #054895;
+  color: #FCDC01;
+
+}
+
+/* Your existing CSS styles */
+
+.wrapper {
+  display: flex;
+  padding-top: 50px;
+  justify-content: center;
+  
+}
+
+.collapsible {
+  overflow: hidden;
+  font-weight: 500;
+ 
+  
+}
+
+.collapsible input{
+  display: none;
+}
+
+
+.collapsible label {
+  font-size: 35px;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-weight: 600;
+  background: #054895 url(https://lh3.googleusercontent.com/drive-viewer/AITFw-xEwcKV3rIFprMzl26YJ3o3y4p60w_hQpgcTME8iGRkg0papEfE2xrLYXmu8b0W_8gEKvbCW1t157dAfXHAl2ZqD4ft0g=s2560) no-repeat 95% center; /* Add the background image to the label */
+  background-size: 70px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+  color:white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 30px 300px;
+  border-radius: 50px;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+
+.collapsible-text {
+  position: absolute;
+  z-index:999;
+  visibility: hidden;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 4px;
+  line-height: 1.4;
+  opacity: 1;
+  color: white;
+  font-size:20px;
+  transition: all 0.3s ease;
+  text-align: center; /* Center the text inside the collapsible label */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+  
+.accordion {
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border-color: #054895;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: white;
+  margin: 0 auto; /* Add this line to center the accordion */
+  align-items: center;
+}
+
+.accordion__label,
+.accordion__content {
+  padding: 14px 20px;
+}
+
+.accordion__label {
+  display: block;
+  color:black;
+  font-weight: 500;
+  font-size: 34px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.1s;
+  height: 90px;
+  border-bottom: 2px #054895;
+  
+}
+
+.accordion__label:hover {
+  background: rgba(255, 245, 152, 0.897);
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.accordion__content {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+  border-top: 2px solid #054895;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__label .green-text {
+  /* Apply the green color */
+  color: green;
+}
+
+.accordion__label .red-text {
+  /* Apply the green color */
+  color: red;
+}
+
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+.accordion-container {
+  background-color: #054895;
+  padding: 20px;
+  max-width: 900px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  height: 700px; /* Set a fixed height for the container */
+  overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+  border-top-right-radius: 20px; /* Add this to remove the top-right corner radius */
+}
+
+.record-keeper {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record-keeper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.record-info p {
+  margin: 5px 0;
+  color: #333333;
+}
+
+/* Use flexbox to align labels and dropdowns in a row */
+/* Your existing CSS styles */
+
+/* ... (existing styles) ... */
+
+/* Use flexbox to align labels and dropdowns in a row */
+.record-info {
+  display: flex;
+  flex-direction: row; /* Change the direction to row */
+  align-items: center;
+  font-size: 30px;
+}
+
+.record-info label,
+.record-info select {
+  margin-right: 20px; /* Add some space between the label and dropdown */
+}
+
+.dropdowns {
+  margin-top: 20px;
+  font-size: 30px;
+  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+select {
+  font-size: 30px; /* Increase the font size */
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #FCDC01; /* Darker blue border color */
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: white; /* Darker blue text color */
+  background-color: #054895; /* Light gray background color */
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+  border-color: #3498db; /* Blue highlight on focus */
+}
+
+/* Add a smooth transition to the dropdowns */
+select {
+  transition: border-color 0.3s ease;
+}
+
+/* Add this in your records.css file or a new CSS block */
+.popup {
+  z-index: 999;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FCDC01;
+  padding: 30px; /* Increase padding to give more space inside the panel */
+  border-radius: 30px;
+  border-color: #054895;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 900px; /* Increase the width */
+  max-width: 80%; /* Set a maximum width to prevent it from being too wide on large screens */
+  height: 880px; /* Let the height adjust automatically based on content */
+  max-height: 1000px; /* Set a maximum height to prevent it from being too tall on small screens */
+  overflow-y: auto; /* Add scrollbars if the content overflows */
+}
+
+#financial-documents-popup {
+  background-color: #054895;
+}
+
+
+.popup-button {
+  display: block;
+  width: 350px;
+  height: 350px;
+  margin: 10px auto;
+  font-size: 50px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.popup-button:hover {
+  background-color: #FCDC01;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+.close-button:hover {
+  color: #054895; /* Change the color on hover if desired */
+}
+
+#financial-documents-popup .close-button:hover {
+  color: #FCDC01; /* Change the color on hover if desired */
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-family: 'Poppins', 'sans-serif';
+  color: white
+}
+
+/* Add this CSS to your existing styles */
+
+/* Flexbox to center the button horizontally and vertically */
+.total-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Add some spacing between the button and the accordion */
+}
+
+/* Button styles */
+.total-button {
+  background-color: #054895; /* Dark blue background color */
+  color: #ffffff; /* White text color */
+  padding: 30px 300px;
+  border: none;
+  border-radius: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Poppins', 'sans-serif';
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+  
+}
+
+
+
+.total-button:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+/* Add this CSS to your existing styles */
+
+/* Flexbox to center the buttons and arrows horizontally */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button styles */
+.month-button {
+  background-color: #ffffff; /* White background color */
+  color: #1a237e; /* Dark blue text color */
+  padding: 20px 40px;
+  border: none;
+  border-radius: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 10px; /* Add some spacing between the buttons and arrows */
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Arrow link styles */
+.arrow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 10px; /* Add some spacing between the buttons and arrows */
+  margin-top: 10px;
+}
+
+.arrow-img {
+  width: 90px; /* Adjust the width of the arrow image as needed */
+  height: auto;
+}
+
+.month-button:hover,
+.arrow-link:hover {
+  opacity: 0.7; /* Reduce opacity on hover for visual feedback */
+}
+
+.month-button:focus,
+.arrow-link:focus {
+  outline: none; /* Remove the default focus outline */
+}
+
+.rectangle {
+  width: 99%; /* Adjust the width as needed */
+  height: 840px; /* Adjust the height as needed */
+  align-items: center;
+  background-color: white; /* Light gray background color */
+  border-radius: 50px; /* Rounded edges */
+  margin-bottom: 10px; /* Add some space between the rectangle and the rest of the content */
+}
+
+
+.popup table {
+  width: 80%;
+  border-collapse: collapse;
+  background-color: white; /* Set the table background to white */
+  color: black; /* Set the text color to black */
+  position: absolute; /* Position the table absolutely */
+  left: 50%; /* Move the table to the center horizontally */
+  top: 55%; /* Move the table to the center vertically */
+  transform: translate(-50%, -50%); /* Center the table perfectly */
+}
+
+.popup td {
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 30px;
+  border: 1px solid black;
+  padding: 8px; /* Add padding to the table cells */
+}
+
+.popup h2 {
+  color: #054895;
+  font-family: 'Poppins', 'sans-serif';
+  font-size: 60px;
+  text-align: center; /* Center the heading text */
+}
+
+
+.rectangle .green-text {
+  /* Apply the green color */
+  color: green;
+}
+
+.rectangle .red-text {
+  /* Apply the green color */
+  color: red;
+}
+
+.doctime-button {
+  background-color: #FCDC01;
+  color: #054895;
+  border: none;
+  border-radius: 70px; /* Use a high value to make the edges almost oval */
+  padding: 30px 60px;
+  margin: 30px; /* Adjust the space between the buttons as needed */
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth color transition on hover */
+  height: 105px;
+  width: 210px;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+}
+
+.doctime-button:hover {
+  color: blue;
+}
