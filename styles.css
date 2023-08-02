@@ -19,6 +19,7 @@
 
 /* Style for the text containers */
 .welcome-text {
+  position: fixed;
   position: absolute;
   bottom: 420px;
   left: 40px;
@@ -30,6 +31,7 @@
 }
 
 .business-text {
+  position: fixed;
   position: absolute;
   bottom: 270px;
   left: 40px;
@@ -42,6 +44,7 @@
 }
 
 .consult-text {
+  position: fixed;
   position: absolute;
   bottom: 100px;
   left: 40px;
@@ -55,6 +58,7 @@
 
 /* Style for the main rectangle */
 .rectangle {
+  position: fixed;
   position: absolute;
   bottom: 250px;
   right: 290px;
@@ -67,6 +71,7 @@
 
 /* Style for the blue rectangle */
 .blue-rectangle {
+  position: fixed;
   position: absolute;
   bottom: 750px;
   right: 290px;
@@ -78,6 +83,7 @@
 
 /* Style for the image container inside the blue rectangle *yle for the yellow button */
 .yellow-button {
+  position: fixed;
   position: absolute;
   bottom: 580px;
   right: 360px;
@@ -94,6 +100,7 @@
 
 /* Style for the blue button */
 .blue-button {
+  position: fixed;
   position: absolute;
   bottom: 400px;
   right: 390px;
@@ -112,6 +119,7 @@
 
 /* Style for the image link at the bottom right */
 .image-link {
+  position: fixed;
   position: absolute;
   top: 18%; /* Adjust the top value to move the image up */
   left: 71%;
