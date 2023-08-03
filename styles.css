@@ -118,19 +118,7 @@
 
 
 /* Style for the image link at the bottom right */
-.image-link {
-  position: fixed;
-  position: absolute;
-  top: 18%; /* Adjust the top value to move the image up */
-  left: 71%;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: 999;
-  pointer-events: none;
-  
-}
+
 
 .yellow-button:hover {
   background-color: #054895;
